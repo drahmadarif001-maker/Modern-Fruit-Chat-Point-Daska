@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Fruit Chat & Juices</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="images/logo.png" alt="Logo">
+    <h1>Modern Fruit Chat & Juices</h1>
+  </div>
+  <div class="contact">
+    <p>Owner: Umer Ali</p>
+    <p>📞 03456862301</p>
+    <p>🏠 Near Waleed Hospital, Nisbat Road, Daska</p>
+  </div>
+</header>
+
+<section class="hero">
+  <h2>Fresh & Tasty Chat, Juices & Shakes!</h2>
+  <p>Order now and get it delivered via WhatsApp instantly!</p>
+  <a href="#products" class="btn-hero">View Menu</a>
+</section>
+
+<div class="tabs">
+  <button class="tab-btn active" data-tab="cream-fruit">Cream & Fruit Chat</button>
+  <button class="tab-btn" data-tab="shakes">Milk Shakes</button>
+  <button class="tab-btn" data-tab="juices">Fresh Juices</button>
+</div>
+
+<main id="products">
+
+<!-- Cream & Fruit Chat -->
+<section class="product-section active" id="cream-fruit">
+<div class="products">
+
+<div class="product-card">
+<span class="badge">Available</span>
+<img src="images/cream_chat.png">
+<h3>Cream Chat</h3>
+<p class="price">350</p>
+<button class="order-btn add-cart">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<span class="badge">Available</span>
+<img src="images/fruit_chat.png">
+<h3>Fruit Chat</h3>
+<p class="price">200</p>
+<button class="order-btn add-cart">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<span class="badge">Available</span>
+<img src="images/dahi_bhallay.png">
+<h3>Dahi Bhallay</h3>
+<p class="price">200</p>
+<button class="order-btn add-cart">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<span class="badge">Available</span>
+<img src="images/gol_gappay.png">
+<h3>Gol Gappay</h3>
+<p class="price">200</p>
+<button class="order-btn add-cart">Add to Cart</button>
+</div>
+
+</div>
+</section>
+
+<!-- Milk Shakes -->
+<section class="product-section" id="shakes">
+<div class="products">
+
+<div class="product-card"><span class="badge">Available</span><img src="images/banana_shake.png"><h3>Banana Shake</h3><p class="price">200</p><button class="order-btn add-cart">Add to Cart</button></div>
+
+<div class="product-card"><span class="badge">Available</span><img src="images/apple_shake.png"><h3>Apple Shake</h3><p class="price">200</p><button class="order-btn add-cart">Add to Cart</button></div>
+
+<div class="product-card"><span class="badge">Available</span><img src="images/khoya_khajoor_shake.png"><h3>Khoya Khajoor Shake</h3><p class="price">250</p><button class="order-btn add-cart">Add to Cart</button></div>
+
+<div class="product-card"><span class="badge">Available</span><img src="images/mango_shake.png"><h3>Mango Shake</h3><p class="price">200</p><button class="order-btn add-cart">Add to Cart</button></div>
+
+<div class="product-card"><span class="badge">Available</span><img src="images/strawberry_shake.png"><h3>Strawberry Shake</h3><p class="price">200</p><button class="order-btn add-cart">Add to Cart</button></div>
+
+<div class="product-card"><span class="badge">Available</span><img src="images/chocolate_shake.png"><h3>Chocolate Shake</h3><p class="price">300</p><button class="order-btn add-cart">Add to Cart</button></div>
+
+<div class="product-card"><span class="badge">Available</span><img src="images/mix_shake.png"><h3>Mix Shake</h3><p class="price">220</p><button class="order-btn add-cart">Add to Cart</button></div>
+
+</div>
+</section>
+
+<!-- Fresh Juices -->
+<section class="product-section" id="juices">
+<div class="products">
+
+<div class="product-card"><span class="badge">Available</span><img src="images/pineapple_juice.png"><h3>Pineapple Juice</h3><p class="price">350</p><button class="order-btn add-cart">Add to Cart</button></div>
+
+<div class="product-card"><span class="badge">Available</span><img src="images/peach_juice.png"><h3>Peach Juice</h3><p class="price">200</p><button class="order-btn add-cart">Add to Cart</button></div>
+
+<div class="product-card"><span class="badge">Available</span><img src="images/apple_juice.png"><h3>Apple Juice</h3><p class="price">300</p><button class="order-btn add-cart">Add to Cart</button></div>
+
+<div class="product-card"><span class="badge">Available</span><img src="images/plum_juice.png"><h3>Plum Juice</h3><p class="price">200</p><button class="order-btn add-cart">Add to Cart</button></div>
+
+<div class="product-card"><span class="badge">Available</span><img src="images/falsa_juice.png"><h3>Falsa Juice</h3><p class="price">150</p><button class="order-btn add-cart">Add to Cart</button></div>
+
+</div>
+</section>
+
+</main>
+
+<!-- CART -->
+<div class="cart-panel">
+<h2>🛒 Your Cart</h2>
+<ul id="cart-items"></ul>
+<h3>Total: Rs <span id="total">0</span></h3>
+<button onclick="sendOrder()">Complete Order</button>
+</div>
+
+<footer>
+<p>&copy; 2026 Modern Fruit Chat & Juices</p>
+</footer>
+
+</body>
+</html>

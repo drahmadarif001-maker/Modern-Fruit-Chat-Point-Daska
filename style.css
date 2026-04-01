@@ -1,0 +1,66 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Arial',sans-serif;}
+body{background:#fff8f0;color:#333;}
+
+/* Header */
+header{display:flex;justify-content:space-between;align-items:center;background:#ff6347;color:#fff;padding:15px 30px;flex-wrap:wrap;box-shadow:0 4px 10px rgba(0,0,0,0.2);}
+header .logo{display:flex;align-items:center;}
+header .logo img{width:70px;height:70px;margin-right:10px;border-radius:50%;}
+header .logo h1{font-size:24px;font-weight:bold;}
+header .contact p{margin:2px 0;font-size:14px;}
+
+/* Hero */
+.hero{text-align:center;background:linear-gradient(120deg,#ffe4e1,#fff5f0);padding:50px 20px;border-radius:15px;margin:20px;}
+.hero h2{font-size:36px;color:#ff4500;margin-bottom:10px;}
+.hero p{font-size:18px;margin-bottom:20px;}
+.btn-hero{padding:15px 30px;background:linear-gradient(45deg,#ff4500,#ff6347);color:#fff;text-decoration:none;border-radius:12px;font-weight:bold;transition:0.3s;}
+.btn-hero:hover{background:linear-gradient(45deg,#ff6347,#ff4500);transform:scale(1.05);}
+
+/* Tabs */
+.tabs{display:flex;justify-content:center;margin:30px 0;gap:15px;flex-wrap:wrap;}
+.tab-btn{padding:12px 25px;border:none;border-radius:12px;background:#ff6347;color:#fff;cursor:pointer;font-weight:bold;transition:0.3s;}
+.tab-btn.active, .tab-btn:hover{background:#ff4500;transform:scale(1.05);}
+
+/* Products */
+.products{display:flex;flex-wrap:wrap;justify-content:center;gap:25px;margin-bottom:50px;}
+.product-card{background:#fff;border-radius:15px;box-shadow:0 6px 20px rgba(0,0,0,0.2);width:220px;text-align:center;padding:20px;transition:transform 0.3s,box-shadow 0.3s;position:relative;}
+.product-card:hover{transform:translateY(-10px);box-shadow:0 12px 25px rgba(0,0,0,0.3);}
+.product-card img{width:100%;height:160px;object-fit:cover;border-radius:12px;}
+.product-card h3{margin:10px 0 5px;color:#ff4500;font-size:18px;font-weight:bold;}
+.product-card .price{font-weight:bold;color:#333;margin-bottom:10px;font-size:16px;}
+
+/* Available badge */
+.product-card .badge{position:absolute;top:10px;left:10px;background:linear-gradient(45deg,#28a745,#218838);color:#fff;padding:6px 12px;border-radius:10px;font-size:12px;font-weight:bold;box-shadow:0 2px 5px rgba(0,0,0,0.2);}
+
+/* Order Button */
+.order-btn{display:inline-block;padding:12px 25px;background:linear-gradient(45deg,#ff4500,#ff6347);color:#fff;text-decoration:none;border-radius:12px;margin-top:10px;font-weight:bold;transition:0.3s;}
+.order-btn:hover{background:linear-gradient(45deg,#ff6347,#ff4500);transform:scale(1.05);}
+
+/* Footer */
+footer{text-align:center;padding:20px;background:#ff6347;color:#fff;margin-top:30px;}
+
+/* Product Sections */
+.product-section{display:none;}
+.product-section.active{display:flex;flex-wrap:wrap;justify-content:center;gap:25px;}
+
+/* Responsive */
+@media(max-width:768px){header{flex-direction:column;align-items:flex-start;} .products{justify-content:center;}}
+.cart-panel{
+position:fixed;
+right:15px;
+bottom:15px;
+width:300px;
+background:#fff;
+padding:15px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+max-height:400px;
+overflow:auto;
+z-index:999;
+}
+
+.cart-panel li{
+margin-bottom:8px;
+background:#fff5f0;
+padding:8px;
+border-radius:8px;
+}
